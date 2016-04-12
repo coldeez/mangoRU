@@ -26,16 +26,16 @@ public class CheckVATSPages {
     
     @Test
     public void CheckCriticalPages() {
-        wd.get("http://www.site-release.mango.local/products/virtualnaya_ats");
-        wd.get("http://www.site-release.mango.local/products/virtualnaya_ats/functions");
-        wd.get("http://www.site-release.mango.local/application/biznes_resheniya");
-        wd.get("http://www.site-release.mango.local/tariffs/vpbx");
-        wd.get("http://www.site-release.mango.local/tariffs/numbers");
-        wd.get("http://www.site-release.mango.local/products/stoimost_nomera_8800");
-        wd.get("http://www.site-release.mango.local/tariffs/connection");
-        wd.get("http://www.site-release.mango.local/tariffs/8800");
-        wd.get("http://www.site-release.mango.local/tariffs/call-center");
-        wd.get("http://www.site-release.mango.local/support/virtualnaya_ats");
+        wd.get("http://site-release.mango.local/products/virtualnaya_ats");
+        wd.get("http://site-release.mango.local/products/virtualnaya_ats/functions");
+        wd.get("http://site-release.mango.local/application/biznes_resheniya");
+        wd.get("http://site-release.mango.local/tariffs/vpbx");
+        wd.get("http://site-release.mango.local/tariffs/numbers");
+        wd.get("http://site-release.mango.local/products/stoimost_nomera_8800");
+        wd.get("http://site-release.mango.local/tariffs/connection");
+        wd.get("http://site-release.mango.local/tariffs/8800");
+        wd.get("http://site-release.mango.local/tariffs/call-center");
+        wd.get("http://site-release.mango.local/support/virtualnaya_ats");
     }
     
     @AfterMethod

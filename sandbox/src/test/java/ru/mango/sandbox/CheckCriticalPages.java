@@ -26,10 +26,10 @@ public class CheckCriticalPages {
 
   @Test
   public void CheckCriticalPages() {
-    wd.get("http://http://www.site-release.mango.local/");
-    wd.get("http://www.site-release.mango.local/about/contact_data/moskva ");
-    wd.get("http://www.site-release.mango.local/application/biznes_resheniya");
-    wd.get("http://www.site-release.mango.local/shop/products");
+    wd.get("http://http://site-release.mango.local/");
+    wd.get("http://site-release.mango.local/about/contact_data/moskva ");
+    wd.get("http://site-release.mango.local/application/biznes_resheniya");
+    wd.get("http://site-release.mango.local/shop/products");
   }
 
   @AfterMethod

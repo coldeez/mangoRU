@@ -26,11 +26,11 @@ public class CheckCOVPages {
 
   @Test
   public void CheckCriticalPages() {
-    wd.get("http://www.site-release.mango.local/products/call_centre");
-    wd.get("http://www.site-release.mango.local/products/call_centre/functions");
-    wd.get("http://www.site-release.mango.local/products/call_centre/resheniya");
-    wd.get("http://www.site-release.mango.local/products/call_centre/tariffs");
-    wd.get("http://www.site-release.mango.local/support/tsentr_obrabotki_vyzovov");
+    wd.get("http://site-release.mango.local/products/call_centre");
+    wd.get("http://site-release.mango.local/products/call_centre/functions");
+    wd.get("http://site-release.mango.local/products/call_centre/resheniya");
+    wd.get("http://site-release.mango.local/products/call_centre/tariffs");
+    wd.get("http://site-release.mango.local/support/tsentr_obrabotki_vyzovov");
   }
 
   @AfterMethod

@@ -26,11 +26,11 @@ public class CheckCRMPages {
 
   @Test
   public void CheckCriticalPages() {
-    wd.get("http://www.site-release.mango.local/products/CRM");
-    wd.get("http://www.site-release.mango.local/products/CRM/functions");
-    wd.get("http://www.site-release.mango.local/products/CRM/resheniya/uchet_klientov");
-    wd.get("http://www.site-release.mango.local/products/CRM#crm_price");
-    wd.get("http://www.site-release.mango.local/support/crm");
+    wd.get("http://site-release.mango.local/products/CRM");
+    wd.get("http://site-release.mango.local/products/CRM/functions");
+    wd.get("http://site-release.mango.local/products/CRM/resheniya/uchet_klientov");
+    wd.get("http://site-release.mango.local/products/CRM#crm_price");
+    wd.get("http://site-release.mango.local/support/crm");
   }
 
   @AfterMethod
