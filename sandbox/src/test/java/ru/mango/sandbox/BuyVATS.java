@@ -19,7 +19,7 @@ public class BuyVATS {
   }
 
   @Test
-  public void LoginTests() {
+  public void BuyVATSTests() {
     wd.get("http://site-release.mango.local/");
     wd.findElement(By.linkText("Интернет-магазин")).click();
     wd.findElement(By.linkText("Вход")).click();

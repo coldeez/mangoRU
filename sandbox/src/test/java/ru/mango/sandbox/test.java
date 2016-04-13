@@ -23,17 +23,7 @@ public class test {
     
     @Test
     public void test() {
-        wd.get("http://site-release.mango.local/shop/cart?v=klient");
-        wd.findElement(By.id("enter-login")).click();
-        wd.findElement(By.id("enter-login")).sendKeys("\\undefined");
-        wd.findElement(By.id("enter-pass")).click();
-        wd.findElement(By.id("enter-pass")).sendKeys("\\undefined");
-        wd.findElement(By.cssSelector("p.name")).click();
-        wd.findElement(By.id("enter-login")).click();
-        wd.findElement(By.id("enter-login")).sendKeys("\\undefined");
-        wd.findElement(By.id("enter-pass")).click();
-        wd.findElement(By.id("enter-pass")).sendKeys("\\undefined");
-        wd.findElement(By.linkText("Продукты")).click();
+        wd.get("http://site-release.mango.local/shop/products");
         wd.findElement(By.linkText("Вход")).click();
         wd.findElement(By.name("USER_LOGIN")).click();
         wd.findElement(By.name("USER_LOGIN")).sendKeys("\\undefined");
@@ -41,13 +31,16 @@ public class test {
         wd.findElement(By.name("USER_PASSWORD")).sendKeys("\\undefined");
         wd.findElement(By.name("USER_LOGIN")).click();
         wd.findElement(By.name("USER_LOGIN")).clear();
-        wd.findElement(By.name("USER_LOGIN")).sendKeys();
-        wd.findElement(By.name("USER_LOGIN")).click();
-        wd.findElement(By.name("USER_LOGIN")).clear();
         wd.findElement(By.name("USER_LOGIN")).sendKeys("16804850");
+        wd.findElement(By.name("USER_PASSWORD")).click();
+        wd.findElement(By.name("USER_PASSWORD")).clear();
+        wd.findElement(By.name("USER_PASSWORD")).sendKeys("Qwerty12345");
         wd.findElement(By.xpath("//div[@class='enter_btn']/input")).click();
-        wd.findElement(By.linkText("КУПИТЬ")).click();
-        wd.findElement(By.cssSelector("div.cols")).click();
+
+
+
+        wd.findElement(By.xpath("//div[@class='p-shop-products']/div[1]/div[2]/a[2]")).click();
+        wd.findElement(By.id("covx_next")).click();
         wd.findElement(By.id("vpbx_next")).click();
         wd.findElement(By.id("select_vats_tariff_next")).click();
         wd.findElement(By.id("reg_from_numbers_email")).click();
@@ -57,15 +50,12 @@ public class test {
         wd.findElement(By.linkText("ПРОДОЛЖИТЬ")).click();
         wd.findElement(By.id("continue_number_case")).click();
         wd.findElement(By.id("order_button_check")).click();
-        wd.findElement(By.xpath("//div[@class='box_pay_system']/div[6]/div[2]")).click();
         wd.findElement(By.xpath("//label[@for='PAYSYSTEM_1']")).click();
         if (!wd.findElement(By.id("PAYSYSTEM_1")).isSelected()) {
             wd.findElement(By.id("PAYSYSTEM_1")).click();
         }
         wd.findElement(By.cssSelector("input.btn.green")).click();
-        wd.findElement(By.cssSelector("div.container")).click();
         wd.findElement(By.id("order_button_action")).click();
-        wd.findElement(By.linkText("продолжить покупки")).click();
     }
     
     @AfterMethod
