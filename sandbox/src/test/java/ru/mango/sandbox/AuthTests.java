@@ -24,13 +24,8 @@ public class AuthTests {
         wd.findElement(By.linkText("Интернет-магазин")).click();
         wd.findElement(By.linkText("Вход")).click();
         wd.findElement(By.name("USER_LOGIN")).click();
-        wd.findElement(By.name("USER_LOGIN")).sendKeys("\\undefined");
-        wd.findElement(By.name("USER_PASSWORD")).click();
-        wd.findElement(By.name("USER_PASSWORD")).sendKeys("\\undefined");
-        wd.findElement(By.name("USER_LOGIN")).click();
-        wd.findElement(By.name("USER_LOGIN")).click();
         wd.findElement(By.name("USER_LOGIN")).clear();
-        wd.findElement(By.name("USER_LOGIN")).sendKeys("16804480");
+        wd.findElement(By.name("USER_LOGIN")).sendKeys("16804850");
         wd.findElement(By.name("USER_PASSWORD")).click();
         wd.findElement(By.name("USER_PASSWORD")).clear();
         wd.findElement(By.name("USER_PASSWORD")).sendKeys("Qwerty12345");
